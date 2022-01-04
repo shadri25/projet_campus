@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&family=Playfair+Display&display=swap');
+:root {
+    --main-color: #EC7116;
+    --main-font: "Playfair Display", serif;
+    --main-size-font: 80px;
+    --second-size-font: 50px;
+    --second-font: 'Open Sans', sans-serif;
+    --font-uppercase: uppercase;
+    --letter-spacing-small: -5px;
+}
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+/* MENU */
+#menu{
+	position: fixed;
+  float: right;
+	background-color:#222;
+	height:100%;
+	z-index:10;
+	width: 110px;
+	color:white;
+	top:0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity:1;
+	font-family: var(--main-font);
+}
+
+#menu ul{
+	list-style:none;
+	margin-top:0;
+	padding:0;
+}
+
+#menu ul li{
+  border: solid 1px white;
+  text-transform: var(--font-uppercase);
+}
+#menu>ul>li>a{border-left:4px solid #222;}
+#menu ul li a{
+  text-align: center;
+	color:inherit;
+	font-size:14px;
+	display:block;
+	padding: 5rem 0 5rem 0;
+	text-decoration:none;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	font-weight: 300;
+}
+#menu ul a i{
+	margin-right:10px;
+	font-size: 18px;
+	margin-top: 3px;
+	width: 20px;
+}
+
+#menu ul a:hover{
+	color: var(--main-color);
+}
+#menu ul a:hover i:first-child{color:(--main-color);}
+
+	/* Submenu */
+	#menu ul li a.active+ul{display:block}
+	#menu ul li ul{margin-top: 0;display: none;}
+	#menu ul li ul li{border-bottom: none;}
+	#menu ul li ul li a{padding-left: 30px;}
+	#menu ul li ul li a:hover{
+		background-color:#1A1A1A;
+	}
+	/* /Submenu */
+
+
+/* Cuando este a la Izq, para esconderlo posicionarlo a la Izq a -width */
+.right{right:-280px;}
+.show{right:0;}
+
+#showmenu{
+	margin-left:100%;
+	position:absolute;
+	top:0;
+	padding:6px 10px 7px 10px;
+	font-size:1.3em;
+	color:(--main-color);
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+#container{padding: 50px;}
+
+body {
+  background-color: #181615;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 { 
+  font-size: var(--main-size-font);
+  text-transform: var(--font-uppercase);
+  letter-spacing: var(--letter-spacing-small);
+  line-height: 80px;
+  margin: 15vh 0 5vh 0;
+}
+
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+li {
+  list-style-type: none;
+}
+
+div.line-1 {
+  border-bottom: 1px solid white;
+  width: 5%;
+}
+
+.intro {
+  margin: 5vh 0 50vh 0;
+}
+
+.home-text-element-graphic {
+  padding-left: 5rem;
+}
+
+h1, h2 {
+  font-family: var(--main-font);
+}
+
+h1, h2, p {
+  color :white;
+}
+
+p{
+  font-family: var(--second-font);
+  font-size: 16px;
+}
+
+h2 {
+  font-size: var(--second-size-font);
+  color: var(--main-color);
+}
+
+
+
