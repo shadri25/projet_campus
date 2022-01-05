@@ -22,9 +22,10 @@
         </nav>
     </header>
     <router-view/>
-        <img class="rectangle-1" src="./assets/img/rectangle.svg" alt="Logo du Campus Belfort-Montbéliard">
-
+        <img class="large-rectangle" src="./assets/img/large-rectangle.svg" alt="Logo du Campus Belfort-Montbéliard">
+  
   </div>
+  
 </template>
 
 <script>
@@ -45,7 +46,7 @@ header {
   padding: 2rem;
 }
 
-.rectangle-1 {
+.large-rectangle {
   position: absolute;
   top: 25%;
   left: -1%;

@@ -1,15 +1,15 @@
 <template>
   <div id="home">
   <div class="home-text-element-graphic">
-  <img style="position:absolute; top: 25vh;" src="../assets/img/graphic-element-logo.svg" alt="Element graphique">
+  <img style="position:absolute; top: 25vh;" src="../assets/img/graphic-element-logo-top.svg" alt="Element graphique">
+  <img class="element-graphic-logo-bottom" style="position:absolute; top: 80vh;" src="../assets/img/graphic-element-logo-bottom.svg" alt="Element graphique">
+
     <div class="text-home-1">
       <h1>Le Campus métropolitain <div style="color: #EC7116">Belfort-Montbéliard</div></h1>
         <div class="line-1"></div>
         <div class="intro"><p>Découvrez les formations et bons plans du Campus Belfort-Montbéliard.</p></div>
     </div>
   </div>
-  
-    
     <h2>3 axes pour vous guider</h2>
     <div class="three-axes">
       <ul>
